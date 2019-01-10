@@ -1,5 +1,5 @@
 {
-    "name": "your-name-here/Image",
+    "name": "kaliel/cakephp-image",
     "description": "Image plugin for CakePHP",
     "type": "cakephp-plugin",
     "license": "MIT",
