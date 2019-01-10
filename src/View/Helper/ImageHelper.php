@@ -22,11 +22,11 @@ class ImageHelper extends Helper
 
     public function resize($url, $params, $options)
     {
-        return $this->Html->Image($url, $params, $options);
+        return $this->Html->Image($this->resizeUrl($url), $params, $options);
     }
 
     public function resizeUrl($url)
     {
-
+        return $url;
     }
 }
