@@ -47,8 +47,21 @@ class ImageHelper extends Helper
             $manager->make($imageFile->path)
                 ->orientate()//prevent weird orientation from iphone pictures
                 ->fit($width, $height)
-                ->save($newThumbFilePath)
+                ->save($newThumbFilePath, $quality)
                 ->destroy();
+
+            if ($optimize === true) {
+                if ($optimize) {
+                    if ($imageFile->ext() == 'jpg' || $imageFile->ext() == 'jpeg' || $imageFile->ext() == 'JPG') {
+                        shell_exec('jpegoptim -m90 --strip-all ' . $newThumbFilePath);
+                    }
+
+                    if ($imageFile->ext() == 'png') {
+                        shell_exec('optipng -o5 -strip all ' . $newThumbFilePath);
+                    }
+
+                }
+            }
         }
 
         return str_replace(WWW_ROOT . 'img' . DS, '', $newThumbFilePath);
