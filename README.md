@@ -1,4 +1,7 @@
 # Image resizer plugin for CakePHP
+[![Latest Stable Version](https://poser.pugx.org/kaliel/cakephp-image/v/stable)](https://packagist.org/packages/kaliel/cakephp-image)
+[![License](https://poser.pugx.org/kaliel/cakephp-image/license)](https://packagist.org/packages/kaliel/cakephp-image)
+[![Total Downloads](https://poser.pugx.org/kaliel/cakephp-image/downloads)](https://packagist.org/packages/kaliel/cakephp-image)
 
 This branch is designed to be used with **CakePHP 3.7+**
 
