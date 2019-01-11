@@ -19,12 +19,16 @@ $this->addPlugin('Image');
 
 ## Configuration
 
+By default, generated thumbnail will be renamed like this :
+
+**filename**_**width**x**height**_**quality**.jpg
+
 
 ## Usage
 
 In your template files (*.ctp), you can either print an html image tag of your thumbnail, or get a thumbnail url, from original large picture.
 
-Exemple of Html image tag of thumbnail from original image :
+#### Html image tag of thumbnail from original image :
 ```
 $this->Image->resize('original_large.jpg', 80, 80, 60, true, ['alt' => 'image alternative text']);
 ```
