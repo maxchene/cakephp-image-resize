@@ -21,7 +21,7 @@ $this->addPlugin('Image');
 
 By default, generated thumbnail will be renamed like this :
 
-`filename`_`width`x`height`_`quality`.`extension`
+```Filename_WidthxHeight_Quality.Extension```
 
 So requesting a thubmnail of 640x480 with a 60 quality from the original file kitty.jpg will generate the file :
 ```kitty_640x480_60.jpg```
