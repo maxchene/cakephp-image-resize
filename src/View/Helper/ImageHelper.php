@@ -43,6 +43,8 @@ class ImageHelper extends Helper
 
         if (!(new File($newThumbFilePath))->exists()) {
 
+            $quality = $quality === null ? 100 : $quality;
+
             $manager = new ImageManager();
             $manager->make($imageFile->path)
                 ->orientate()//prevent weird orientation from iphone pictures

@@ -2,6 +2,7 @@
     "name": "kaliel/cakephp-image",
     "description": "Image plugin for CakePHP",
     "type": "cakephp-plugin",
+    "homepage": "https://github.com/kaliel86/cakephp-image",
     "license": "MIT",
     "require": {
         "php": ">=5.6",
@@ -21,5 +22,8 @@
             "Image\\Test\\": "tests/",
             "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
         }
+    },
+    "support": {
+        "source": "https://github.com/kaliel86/cakephp-image"
     }
 }
