@@ -7,7 +7,7 @@ This branch is designed to be used with **CakePHP 3.7+**
 
 ## What it does
 
-This is a lightweight, simple plugin that provides a Helper that resize your pictures on the fly using intervention/image.
+Simple, lightweight plugin, that provides a Helper to resize your pictures on the fly using intervention/image.
 
 ## Installation
 
@@ -26,7 +26,7 @@ By default, generated thumbnail will be renamed like this :
 
 ```Filename_WidthxHeight_Quality.Extension```
 
-So requesting a thubmnail of 640x480 with a 60 quality from the original file kitty.jpg will generate the file :
+So requesting a thubmnail of 640x480 with a 60 quality from the original file kitty.jpg will generate, in the same directory, the file :
 ```kitty_640x480_60.jpg```
 
 
